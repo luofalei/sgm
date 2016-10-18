@@ -3,8 +3,8 @@
 
 #include <stdint.h>
 
-#define LOG						false
-#define WRITE_FILES				true
+#define LOG						0
+#define WRITE_FILES				1
 
 #define PATH_AGGREGATION	4
 #define	MAX_DISPARITY		128

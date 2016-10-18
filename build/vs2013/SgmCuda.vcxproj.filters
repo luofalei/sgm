@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="CUDA">
+      <UniqueIdentifier>{ad0e5d3f-f603-4111-a1ff-565a6544406c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\configuration.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cost_aggregation.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\costs.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\debug.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\disparity_method.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hamming_cost.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\median_filter.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\costs.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\debug.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\disparity_method.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\hamming_cost.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\main.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\median_filter.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
