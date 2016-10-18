@@ -5,7 +5,7 @@
 #include <dirent.h>
 #include <stdio.h>
 
-#define FERMI false
+#define FERMI                       0
 
 #define GPU_THREADS_PER_BLOCK_FERMI 256
 #define GPU_THREADS_PER_BLOCK_MAXWELL 64
@@ -16,6 +16,9 @@
 #else
   #define GPU_THREADS_PER_BLOCK   GPU_THREADS_PER_BLOCK_MAXWELL
 #endif
+
+/* used to disable errors on Windows */
+#define __restrict__
 
 #define WARP_SIZE		32
 
