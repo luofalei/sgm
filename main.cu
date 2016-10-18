@@ -1,6 +1,11 @@
 #include <iostream>
 #include <numeric>
+#ifdef WIN32
+#include <windows.h>
+#else
 #include <sys/time.h>
+#endif
+
 #include <vector>
 #include <stdlib.h>
 #include <typeinfo>
@@ -11,11 +16,18 @@
 #include <ctime>
 #include <sys/types.h>
 #include <stdint.h>
+#ifdef WIN32
+#else
 #include <linux/limits.h>
+#endif
 #include <dirent.h>
 #include <iostream>
 #include <fstream>
 #include "disparity_method.h"
+
+#if WIN32
+#include "opencv_tool.hpp"
+#endif
 
 bool directory_exists(const char* dir) {
 	DIR* d = opendir(dir);
