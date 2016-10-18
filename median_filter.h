@@ -3,6 +3,9 @@
 
 #include <stdint.h>
 
+/* used to disable errors on Windows */
+#define __restrict__
+
 __global__ void MedianFilter3x3(const uint8_t* __restrict__ d_input, uint8_t* __restrict__ d_out, const uint32_t rows, const uint32_t cols);
 
 template<int n, typename T>
